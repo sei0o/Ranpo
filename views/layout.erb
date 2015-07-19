@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+      body { padding-bottom: 50px; }
+    </style>
+    <title>Ranpo - Random articles from Pocket</title>
+  </head>
+  <body>
+    <nav id="page_header" class="navbar navbar-inverse navbar-fixed-bottom">
+      <header class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".m-target">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">Ranpo</a>
+      </header>
+
+      <div class="collapse navbar-collapse m-target">
+        <ul class="nav navbar-nav">
+          <li><a href="/random">Random</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div style="height: 100%">
+      <%= yield %>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
